@@ -1,2 +1,4 @@
 numpy
+wheel==0.38.4
+setuptools==65.5.0
 gym==0.21.0
