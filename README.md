@@ -10,4 +10,4 @@ pip install -r requirements.txt
 
 webpage: 
 * [Gym](https://www.gymlibrary.dev/)
-* [miniconda](https://docs.anaconda.com/miniconda/)
+* [Miniconda](https://docs.anaconda.com/miniconda/)
