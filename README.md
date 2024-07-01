@@ -5,3 +5,9 @@ Baselines for the 2024 summer course laboratory course
 ```
 pip install -r requirements.txt
 ```
+
+## Reference
+
+webpage: 
+* [Gym](https://www.gymlibrary.dev/)
+* [miniconda](https://docs.anaconda.com/miniconda/)
