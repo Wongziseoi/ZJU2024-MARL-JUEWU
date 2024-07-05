@@ -1,2 +1,8 @@
-numpy
+numpy<1.20
+# wheel==0.38.4
+# setuptools==65.5.0
 gym==0.21.0
+pyglet==1.5.27
+matplotlib==3.5.3
+tqdm
+gymnasium"[atari, accept-rom-license]"

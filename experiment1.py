@@ -1,9 +1,7 @@
 import gym
 import numpy as np
 from collections import deque
-
 import time
-
 
 env = gym.make('CartPole-v1')
 print('observation space:', env.observation_space)
@@ -31,7 +29,18 @@ np.random.seed(0)
 policy = Policy()
 
 def hill_climbing(n_episodes=10000, gamma=0.99, noise_scale=1e-2):
-
+    """
+    Hill climbing algorithm for reinforcement learning.
+    
+    Args:
+        n_episodes (int): Number of episodes to run.
+        gamma (float): Discount factor for future rewards.
+        noise_scale (float): Scale factor for noise added to policy weights.
+    
+    Returns:
+        scores (list): List of scores obtained in each episode.
+        arr_noise (list): List of noise scales used in each episode.
+    """
     scores_deque = deque(maxlen=100)
     scores = []
     arr_noise = []
@@ -97,4 +106,3 @@ while not done:
     env.render()
     action = policy.act(state)
     state, reward, done, _ = env.step(action)            
-    
